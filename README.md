@@ -41,13 +41,21 @@
 ## 📦 Project Structure
 ```
 /
-├── main_sensor.py       # Sensor node code
-├── main_gateway.py      # LoRa gateway code
-├── raspi_gateway.py     # Raspberry Pi AWS connector
-└── libraries/
-    ├── dht20.py        # DHT20 sensor library
-    ├── sx127x.py       # LoRa module library
-    └── examples/       # LoRa example code
+├── esp32_GW/               # ESP32 Gateway node code
+│   ├── examples/           # LoRa examples
+│   ├── boot.py            # Boot configuration
+│   ├── main.py            # Gateway main code
+│   └── sx127x.py          # LoRa module library
+│
+├── esp32_sensor/          # ESP32 Sensor node code
+│   ├── examples/          # LoRa examples
+│   ├── boot.py            # Boot configuration
+│   ├── dht20.py          # DHT20 sensor library
+│   ├── main.py           # Sensor node main code
+│   └── sx127x.py         # LoRa module library
+│
+├── README.md             # Project documentation
+└── raspi_gateway.py      # Raspberry Pi AWS connector
 ```
 
 ## 🔌 Pin Configuration
