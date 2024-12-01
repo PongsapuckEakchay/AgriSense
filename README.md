@@ -17,7 +17,7 @@
 ### Network Architecture
 - Device Layer: ESP32 with sensors
 - Communication: LoRa (433MHz) for sensor data transmission
-- Gateway: Raspberry Pi with LoRa receiver + NB-IoT
+- Gateway: Raspberry Pi with LoRa receiver
 - Cloud: AWS IoT Core
 
 ### Communication Protocols
